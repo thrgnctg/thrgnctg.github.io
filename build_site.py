@@ -3,7 +3,7 @@
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-BASE = "https://thrgnctg.github.io"
+BASE = "https://lifedevlabs.com"
 GOOGLE_SITE_VERIFICATION = "ZOvy3cL8KDfEu2qvsGk_tlrdckcJPJMAosgKHQQffbM"
 DATE_TR = "26 Eylül 2026"
 DATE_EN = "September 26, 2026"

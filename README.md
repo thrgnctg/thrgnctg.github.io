@@ -4,7 +4,7 @@ Static, bilingual GitHub Pages site for ShiftLife. The Turkish pages use `/`, `/
 
 ## Publishing
 
-Create the public repository `thrgnctg/thrgnctg.github.io`, push `main`, and enable GitHub Pages from the root of `main`. The intended public origin is `https://thrgnctg.github.io`. Verify the live HTTPS pages and add this host to Google Search Console before submitting Google OAuth branding. Google's verified-domain review may require a domain registered to the developer; if so, point a purchased domain at these same files and update `BASE`, `robots.txt`, and App Store/app links.
+The public origin is `https://lifedevlabs.com`. GitHub Pages publishes `main` from the repository root with `lifedevlabs.com` as its custom domain. The apex points to GitHub Pages using the four official A records; `www` is a CNAME to `thrgnctg.github.io`. GitHub Pages redirects the default `thrgnctg.github.io` host and `www` to the apex while preserving page paths. Keep the GitHub Pages domain-verification TXT record in DNS, and enforce HTTPS after GitHub provisions its certificate. Verify the live pages and the `lifedevlabs.com` Search Console Domain Property before submitting Google OAuth branding.
 
 ## Updating
 
