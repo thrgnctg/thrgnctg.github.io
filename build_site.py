@@ -4,6 +4,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 BASE = "https://thrgnctg.github.io"
+GOOGLE_SITE_VERIFICATION = "ZOvy3cL8KDfEu2qvsGk_tlrdckcJPJMAosgKHQQffbM"
 DATE_TR = "26 Eylül 2026"
 DATE_EN = "September 26, 2026"
 
@@ -145,12 +146,16 @@ def render(kind: str, lang: str) -> str:
     )
     switch_label = "English" if lang == "tr" else "Türkçe"
     footer = "TAHIR GENCTOG · LIFEDEVLABS" if lang == "tr" else "TAHIR GENCTOG · LIFEDEVLABS"
+    verification_meta = (
+        f'  <meta name="google-site-verification" content="{GOOGLE_SITE_VERIFICATION}" />\n'
+        if kind == "home" and lang == "tr" else ""
+    )
     return f'''<!doctype html>
 <html lang="{lang}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light dark">
+{verification_meta}  <meta name="color-scheme" content="light dark">
   <meta name="description" content="{item['description']}">
   <meta property="og:type" content="website">
   <meta property="og:title" content="{item['title']}">
