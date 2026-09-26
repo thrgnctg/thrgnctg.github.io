@@ -10,4 +10,4 @@ The public origin is `https://lifedevlabs.com`. GitHub Pages publishes `main` fr
 
 Edit `build_site.py`, then run `python3 build_site.py`. This regenerates the eight HTML pages and `sitemap.xml`. The site uses no JavaScript, cookies, analytics, external fonts, or third-party runtime dependencies. Its bundled Figtree font files are licensed under the SIL Open Font License in `fonts/LICENSE.txt`.
 
-The policy describes the current iOS implementation as of September 26, 2026. Review it whenever app data practices change. In particular, automatic iCloud sync is **not** active in this release.
+The policy is prepared for the September 27, 2026 calendar scope update: shifts and optional handovers for 90 days, plus other timed plan blocks for 30 days. Publish this site update alongside the matching iOS build and App Privacy revision. Review the policy whenever app data practices change. Automatic iCloud sync is **not** active in this release.
